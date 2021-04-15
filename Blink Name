@@ -1,0 +1,54 @@
+void dash(){
+    digitalWrite(led,HIGH);
+    delay(unit*4);
+    digitalWrite(led,LOW);
+    delay(unit);
+}
+
+void new_char(){
+    delay(unit*3);
+}
+
+void new_word(){
+    delay(unit*6);
+}
+
+void loop() {
+    //H
+    dot();
+    dot();
+    dot();
+    dot();
+    
+    new_char();
+    
+    //A
+    dot();
+    dash();
+    
+    new_char();
+    
+    //R
+    dot();
+    dash();
+    dot();
+    
+    new_char();
+    
+    //R
+    dot();
+    dash();
+    dot();
+    
+    new_char();
+    
+    
+    
+    //Y
+    dash();
+    dot();
+    dash();
+    dash();
+    
+    new_word();
+}
